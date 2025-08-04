@@ -1,0 +1,12 @@
+com/example/servingwebcontent/Example.class
+com/example/servingwebcontent/forms/Index.class
+com/example/servingwebcontent/forms/PageInfo.class
+com/example/servingwebcontent/forms/Downloader.class
+com/example/servingwebcontent/forms/Callback.class
+com/example/servingwebcontent/GreetingController.class
+com/example/servingwebcontent/forms/Gateway.class
+com/example/servingwebcontent/forms/StorageBarrel.class
+com/example/servingwebcontent/HackerNewsService.class
+com/example/servingwebcontent/forms/SearchClient.class
+com/example/servingwebcontent/ThymeleafServlet.class
+com/example/servingwebcontent/ServingWebContentApplication.class
