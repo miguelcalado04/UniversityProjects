@@ -1,0 +1,24 @@
+1
+Ana Maria Silva
+30/10/2000
+42367860
+939786543
+anaSilva@dei.uc.pt
+4
+Antonio
+12/1/2004
+30606122
+990234567
+antoniovicente@gmail.com
+3
+Miguel
+12/8/2004
+30606149
+933333233
+miguelapcalado@gmail.com
+2
+Paulo Silva
+3/10/2002
+49368863
+960786543
+pSilva@dei.uc.pt

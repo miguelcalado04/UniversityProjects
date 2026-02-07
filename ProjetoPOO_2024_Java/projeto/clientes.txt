@@ -1,0 +1,4 @@
+João,123456789,Continente
+Maria,987654321,Madeira
+Carlos,456789123,Açores
+Claudio,123445678,Madeira

@@ -1,0 +1,6 @@
+jorge;abc123;administrador
+joana;azq1212;professor
+ola;ola;aluno
+as;as;aluno
+batata;batata;professor
+mimi;mumu;aluno

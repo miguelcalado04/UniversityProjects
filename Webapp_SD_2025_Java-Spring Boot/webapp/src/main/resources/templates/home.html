@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-2xl font-semibold text-gray-800">Projeto Universitário</h1>
+            <span class="text-sm text-gray-500">Menu Principal</span>
+        </div>
+    </header>
+
+    
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <a th:href="@{/add-link}" class="bg-gray-100 border border-gray-300 hover:border-blue-500 text-blue-700 p-6 rounded-lg shadow-sm hover:shadow transition text-center">
+                <h2 class="text-lg font-semibold mb-1">Adicionar Link</h2>
+                <p class="text-sm text-gray-600">Adiciona URLs para análise.</p>
+            </a>
+
+            <a th:href="@{/search}" class="bg-gray-100 border border-gray-300 hover:border-blue-500 text-blue-700 p-6 rounded-lg shadow-sm hover:shadow transition text-center">
+                <h2 class="text-lg font-semibold mb-1">Pesquisar Palavras</h2>
+                <p class="text-sm text-gray-600">Pesquisar palavras.</p>
+            </a>
+
+            <a th:href="@{/searchlinks}" class="bg-gray-100 border border-gray-300 hover:border-blue-500 text-blue-700 p-6 rounded-lg shadow-sm hover:shadow transition text-center">
+                <h2 class="text-lg font-semibold mb-1">Pesquisar Links</h2>
+                <p class="text-sm text-gray-600">Ver URLs relacionads com o pesquisado.</p>
+            </a>
+
+            <a th:href="@{/top10}" class="bg-gray-100 border border-gray-300 hover:border-blue-500 text-blue-700 p-6 rounded-lg shadow-sm hover:shadow transition text-center">
+                <h2 class="text-lg font-semibold mb-1">Top 10 Pesquisas</h2>
+                <p class="text-sm text-gray-600">Ver as pesquisas mais frequentes.</p>
+            </a>
+
+            <a th:href="@{/hacker-index}" class="bg-gray-100 border border-gray-300 hover:border-blue-500 text-blue-700 p-6 rounded-lg shadow-sm hover:shadow transition text-center sm:col-span-2">
+                <h2 class="text-lg font-semibold mb-1">Indexação Hacker News</h2>
+                <p class="text-sm text-gray-600">Indexar URLs relacionados com a palavra pesquisada do Hacker News.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="text-center text-gray-400 text-sm py-6 border-t border-gray-200 mt-12">
+        &copy; 2025 SD – Engenharia Informática
+    </footer>
+</body>
+</html>

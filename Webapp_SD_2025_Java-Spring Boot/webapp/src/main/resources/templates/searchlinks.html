@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisar links</title>
+</head>
+<body>
+    <h1>Pesquisar</h1>
+    <form action="/searchlinks" method="get">
+        <label for="keywords">Insira o link:</label>
+        <input type="text" id="keywords" name="keywords" th:value="${keywords}" required>
+        <button type="submit">Pesquisar links</button>
+    </form>
+    <br>
+
+    <!-- Mostrar os resultados da pesquisa -->
+    <div>
+        <h2>Resultados:</h2>
+        <div>
+            <ul>
+                <th:block th:each="result : ${results}">
+                    <li>
+                        <!-- Apenas exibindo os links relacionados -->
+                        <p><strong>Links associados:</strong></p>
+                        <pre th:text="${result['relatedUrls']}">Links</pre>
+                    </li>
+                    <hr>
+                </th:block>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
