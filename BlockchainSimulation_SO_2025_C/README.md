@@ -43,3 +43,8 @@ It focuses on concurrency, IPC, shared memory, and process synchronization.
 - Named Pipe → Miner → Validator
 - Message Queue → Validator → Statistics
 - Semaphores/Mutex → synchronization
+
+## Notes
+
+- Implemented in C
+
