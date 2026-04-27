@@ -1,21 +1,35 @@
-*COMO CONECTAR EM VARIOS DISPOSITIVOS NA MESMA REDE LOCAL*
+##Googol — Motor de Pesquisa de Páginas Web**
 
-correr o maven assim : -> ./mvnw spring-boot:run -Dspring-boot.run.arguments=--server.address=0.0.0.0
+Projeto desenvolvido no âmbito da unidade curricular Sistemas Distribuídos (2024/25).
 
-No wsl corre este comando: 
-  - hostname -I
-(vai aparecer algo como : xxx.xxx.xxx.xxx aaa.aa.a.a ) o ip do wsl vai ser o : xxx.xxx.xxx.xxx
+#Descrição
 
-Abre a PowerShell como administrador e corre estes comandos: (no "connectaddress=" por o ip que obtivemos do hostname -I)
+O Googol é um motor de pesquisa de páginas Web inspirado em sistemas como o Google. O sistema permite a indexação automática de páginas Web e a realização de pesquisas sobre o conteúdo indexado.
 
- - netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=8080 connectaddress=xxx.xxx.xxx.xxx
-    (Faz o port forwarding no Windows para o WSL IP)
+O sistema suporta:
 
- - New-NetFirewallRule -DisplayName "SpringBootWSL" -Direction Inbound -LocalPort 8080 -Protocol TCP -Action Allow
-    (Permite o acesso na firewall do Windows para a porta 8080)
+Indexação automática de páginas Web (Web Crawler)
+Pesquisa de termos em páginas indexadas
+Ordenação de resultados por relevância (baseada em backlinks)
+Arquitetura distribuída com RPC/RMI
 
+Adicionalmente, permite a submissão manual de URLs para indexação e a exploração recursiva de ligações entre páginas.
 
-Vai a outro dispositivo conectado à mesma internet e pesquisa:(no "xxx.xxx.xxx.xxx" por o ip que obtivemos do hostname -I)
- - http://xxx.xxx.xxx.xxx:8080
+#Arquitetura do Sistema
 
-Desfruta da tua webbapp
+O sistema é composto por quatro principais componentes distribuídos:
+
+Downloaders (Web Crawlers): Responsáveis por obter páginas Web, extrair conteúdo HTML e enviar a informação para indexação.
+Index Storage Barrels: Servidores replicados responsáveis pelo armazenamento do índice invertido e dos metadados das páginas.
+RPC/RMI Gateway: Interface intermédia entre os clientes e os Storage Barrels, responsável pelo encaminhamento de pedidos.
+RPC/RMI Client: Interface utilizada pelos utilizadores para submeter URLs e realizar pesquisas.
+
+A comunicação entre os componentes é realizada através de RPC/RMI, garantindo a distribuição e desacoplamento do sistema.
+
+#Funcionalidades
+Indexação de URLs submetidos pelo utilizador
+Web crawling automático com exploração de ligações
+Indexação de palavras com ligação aos URLs correspondentes
+Pesquisa de páginas que contenham um conjunto de termos definidos pelo utilizador
+Ordenação de resultados por número de backlinks
+Sistema distribuído com replicação de servidores
