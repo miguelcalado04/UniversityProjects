@@ -1,6 +1,6 @@
 # Introduction to Programming – Mini Project (Football Simulator)
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="60"/>
 
 Development of a simple 2-player football game simulator in Python.
 
