@@ -1,4 +1,4 @@
-# POO Financial Services (POOFS)
+# POO Financial Services (POOFS) <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"/>
 
 Object-Oriented Programming 2024/25
 
