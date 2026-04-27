@@ -1,5 +1,5 @@
-Repository containing projects developed throughout the Bachelor's Degree in Informatics Engineering at the university
-It includes practical work from multiple courses, covering different areas of software development
+ - Repository containing projects developed throughout the Bachelor's Degree in Informatics Engineering at the university
+ - It includes practical work from multiple courses, covering different areas of software development
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" style="margin: 0 10px;"/>
