@@ -29,5 +29,5 @@ Distributed system for content dissemination using TCP, UDP, and IP multicast. U
 ## Network
 
 - 3 routers + 2 switches (GNS3)
-- NAT for private network (10.5.2.0/26)
-- Public addressing (193.137.100.0/23)
+- NAT for private network 
+- Public addressing
