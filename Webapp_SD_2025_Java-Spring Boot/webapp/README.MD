@@ -28,9 +28,11 @@ A comunicação entre os componentes é realizada através de RPC/RMI, garantind
 
 ## Funcionalidades
 
+- Integração com a API do Hacker News para obtenção e indexação das top stories associadas aos termos de pesquisa do utilizador
 - Indexação de URLs submetidos pelo utilizador
 - Web crawling automático com exploração de ligações
 - Indexação de palavras com ligação aos URLs correspondentes
 - Pesquisa de páginas que contenham um conjunto de termos definidos pelo utilizador
 - Ordenação de resultados por número de backlinks
 - Sistema distribuído com replicação de servidores
+
