@@ -24,7 +24,7 @@ The system is composed of four main distributed components:
 - **RPC/RMI Gateway:** Intermediate interface between clients and the Storage Barrels, responsible for request routing.
 - **RPC/RMI Client:** Interface used by users to submit URLs and perform searches.
 
-Communication between components is carried out through RPC/RMI, ensuring system distribution and decoupling.
+Communication between components is carried out through RPC/RMI.
 
 ## Functionalities
 
