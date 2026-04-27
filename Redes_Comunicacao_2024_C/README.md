@@ -33,3 +33,7 @@ Distributed system for content dissemination using TCP, UDP, and IP multicast. U
 - 3 routers + 2 switches (GNS3)
 - NAT for private network 
 - Public addressing
+
+## Notes
+
+- Implemented in C
