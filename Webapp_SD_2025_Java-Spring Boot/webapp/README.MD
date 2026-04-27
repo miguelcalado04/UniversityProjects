@@ -1,6 +1,6 @@
 # Googol — Web Search Engine 
 
-<p<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"/></p>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"/>
 
 Developed as part of Distributed Systems (2024/25).
 
