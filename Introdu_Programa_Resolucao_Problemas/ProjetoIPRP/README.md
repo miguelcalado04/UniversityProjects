@@ -1,5 +1,7 @@
 # Introduction to Programming – Mini Project (Football Simulator)
 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"/>
+
 Development of a simple 2-player football game simulator in Python.
 
 The project involved building a complete interactive game where two players control agents in a 2D field, aiming to score goals while defending their own goal. The ball reacts to collisions with players and field boundaries, and the game resets after each goal with a random initial direction.
@@ -14,3 +16,7 @@ Main tasks included:
 - Implementing a replay system (VAR module) to reconstruct goal actions offline
 
 The project focused on fundamental programming concepts in Python such as state management, event handling, file manipulation, and modular function design using the turtle graphics library.
+
+## Notes
+
+- Implemented in Python
