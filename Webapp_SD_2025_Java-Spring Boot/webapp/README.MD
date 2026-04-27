@@ -35,3 +35,8 @@ Communication between components is carried out through RPC/RMI.
 - Searching for pages containing a set of user-defined terms
 - Ranking of results by number of backlinks
 - Distributed system with server replication
+
+
+## Notes
+
+- Implemented in Java  
