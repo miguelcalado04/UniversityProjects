@@ -1,6 +1,6 @@
 # Artificial Intelligence – Projects
 
-## Practical Assignment 1: Lunar Lander (Reactive Agent)
+## Project 1: Lunar Lander (Reactive Agent)
 
 Development of a reactive agent in Python for controlling a spacecraft in the *Lunar Lander* simulation environment.
 
@@ -13,7 +13,7 @@ Basic Artificial Intelligence concepts were applied, particularly reactive agent
 
 ---
 
-## Practical Assignment 2: Evolution of Lunar Lander (Evolutionary Algorithm)
+## Project 2: Evolution of Lunar Lander (Evolutionary Algorithm)
 
 Extension of the previous project with the implementation of an evolutionary algorithm in Python to optimise controllers for the Lunar Lander agent.
 
