@@ -38,28 +38,6 @@ It focuses on concurrency, IPC, shared memory, and process synchronization.
 
 ---
 
-## Data
-
-### Transaction
-- ID, Reward (1–3), Value, Timestamp
-
-### Block
-- ID, Previous Hash, Timestamp, Transactions, Nonce
-
-### Shared Structures
-- Transaction Pool (pending transactions)
-- Blockchain Ledger (validated blocks)
-
----
-
-## Proof-of-Work
-- SHA-256 hashing
-- Increment nonce until hash matches difficulty
-- Difficulty depends on transaction rewards
-- Limited by `POW_MAX_OPS`
-
----
-
 ## IPC Used
 - Shared Memory → Pool + Ledger
 - Named Pipe → Miner → Validator
