@@ -1,4 +1,4 @@
-##Googol — Motor de Pesquisa de Páginas Web**
+*Googol — Motor de Pesquisa de Páginas Web*
 
 Projeto desenvolvido no âmbito da unidade curricular Sistemas Distribuídos (2024/25).
 
