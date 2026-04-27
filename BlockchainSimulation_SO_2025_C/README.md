@@ -2,8 +2,6 @@
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="60"/>
 
-## 
-
 ## Overview
 DEIChain is a simplified blockchain simulation developed for the Operating Systems course.  
 It focuses on concurrency, IPC, shared memory, and process synchronization.
