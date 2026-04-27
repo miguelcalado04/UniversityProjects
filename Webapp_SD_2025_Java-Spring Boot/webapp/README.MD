@@ -1,38 +1,37 @@
-# Googol — Motor de Pesquisa de Páginas Web
+Googol — Web Search Engine
 
-Projeto desenvolvido no âmbito da unidade curricular Sistemas Distribuídos (2024/25).
+Project developed within the scope of the Distributed Systems course (2024/25).
 
-## Descrição
+Description
 
-O Googol é um motor de pesquisa de páginas Web inspirado em sistemas como o Google. O sistema permite a indexação automática de páginas Web e a realização de pesquisas sobre o conteúdo indexado.
+Googol is a web page search engine inspired by systems such as Google. The system allows automatic indexing of web pages and searching over the indexed content.
 
-O sistema suporta:
+The system supports:
 
-- Indexação automática de páginas Web (Web Crawler)
-- Pesquisa de termos em páginas indexadas
-- Ordenação de resultados por relevância (baseada em backlinks)
-- Arquitetura distribuída com RPC/RMI
+Automatic web page indexing (Web Crawler)
+Search for terms in indexed pages
+Ranking of results by relevance (based on backlinks)
+Distributed architecture using RPC/RMI
 
-Adicionalmente, permite a submissão manual de URLs para indexação e a exploração recursiva de ligações entre páginas.
+Additionally, it allows manual submission of URLs for indexing and recursive exploration of links between pages.
 
-## Arquitetura do Sistema
+System Architecture
 
-O sistema é composto por quatro principais componentes distribuídos:
+The system is composed of four main distributed components:
 
-- **Downloaders (Web Crawlers):** Responsáveis por obter páginas Web, extrair conteúdo HTML e enviar a informação para indexação.
-- **Index Storage Barrels:** Servidores replicados responsáveis pelo armazenamento do índice invertido e dos metadados das páginas.
-- **RPC/RMI Gateway:** Interface intermédia entre os clientes e os Storage Barrels, responsável pelo encaminhamento de pedidos.
-- **RPC/RMI Client:** Interface utilizada pelos utilizadores para submeter URLs e realizar pesquisas.
+Downloaders (Web Crawlers): Responsible for fetching web pages, extracting HTML content, and sending the information for indexing.
+Index Storage Barrels: Replicated servers responsible for storing the inverted index and page metadata.
+RPC/RMI Gateway: Intermediate interface between clients and the Storage Barrels, responsible for request routing.
+RPC/RMI Client: Interface used by users to submit URLs and perform searches.
 
-A comunicação entre os componentes é realizada através de RPC/RMI, garantindo a distribuição e desacoplamento do sistema.
+Communication between components is carried out through RPC/RMI, ensuring system distribution and decoupling.
 
-## Funcionalidades
-
-- Integração com a API do Hacker News para obtenção e indexação das top stories associadas aos termos de pesquisa do utilizador
-- Indexação de URLs submetidos pelo utilizador
-- Web crawling automático com exploração de ligações
-- Indexação de palavras com ligação aos URLs correspondentes
-- Pesquisa de páginas que contenham um conjunto de termos definidos pelo utilizador
-- Ordenação de resultados por número de backlinks
-- Sistema distribuído com replicação de servidores
+Functionalities
+Integration with the Hacker News API to fetch and index top stories associated with the user’s search terms
+Indexing of URLs submitted by the user
+Automatic web crawling with link exploration
+Indexing of words mapped to corresponding URLs
+Searching for pages containing a set of user-defined terms
+Ranking of results by number of backlinks
+Distributed system with server replication
 
