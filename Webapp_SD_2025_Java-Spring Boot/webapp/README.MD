@@ -1,8 +1,8 @@
-*Googol — Motor de Pesquisa de Páginas Web*
+#Googol — Motor de Pesquisa de Páginas Web
 
 Projeto desenvolvido no âmbito da unidade curricular Sistemas Distribuídos (2024/25).
 
-#Descrição
+##Descrição
 
 O Googol é um motor de pesquisa de páginas Web inspirado em sistemas como o Google. O sistema permite a indexação automática de páginas Web e a realização de pesquisas sobre o conteúdo indexado.
 
@@ -15,7 +15,7 @@ Arquitetura distribuída com RPC/RMI
 
 Adicionalmente, permite a submissão manual de URLs para indexação e a exploração recursiva de ligações entre páginas.
 
-#Arquitetura do Sistema
+##Arquitetura do Sistema
 
 O sistema é composto por quatro principais componentes distribuídos:
 
@@ -26,7 +26,7 @@ RPC/RMI Client: Interface utilizada pelos utilizadores para submeter URLs e real
 
 A comunicação entre os componentes é realizada através de RPC/RMI, garantindo a distribuição e desacoplamento do sistema.
 
-#Funcionalidades
+##Funcionalidades
 Indexação de URLs submetidos pelo utilizador
 Web crawling automático com exploração de ligações
 Indexação de palavras com ligação aos URLs correspondentes
