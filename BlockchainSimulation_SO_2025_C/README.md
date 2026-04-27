@@ -1,8 +1,8 @@
-# DEIChain – Blockchain Simulation (OS Project)
+# Operating Systems - DEIChain (Blockchain Simulation)
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="60"/>
 
-## Operating Systems
+## 
 
 ## Overview
 DEIChain is a simplified blockchain simulation developed for the Operating Systems course.  
