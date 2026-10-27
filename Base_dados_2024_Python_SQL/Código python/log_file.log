@@ -1,0 +1,138 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 179-988-510
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-196-011
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 179-988-510
+INFO:logger:POST /patient
+DEBUG:logger:POST /patient - payload: {'nif': '100', 'nome': 'Paciente100', 'telemovel': '9333', 'email': 'paciente1@gmail.com', 'data_nasc': '1999-08-19', 'genero': 'Masculino', 'password': 'paciente100'}
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:19:30] "POST /patient HTTP/1.1" 200 -
+INFO:logger:POST /patient
+DEBUG:logger:POST /patient - payload: {'nif': '1000', 'nome': 'Paciente100', 'telemovel': '9333', 'email': 'paciente1@gmail.com', 'data_nasc': '1999-08-19', 'genero': 'Masculino', 'password': 'paciente100'}
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:19:36] "POST /patient HTTP/1.1" 200 -
+INFO:logger:PUT /login
+WARNING:logger:Failed login attempt for NIF 13
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:19:58] "[31m[1mPUT /user HTTP/1.1[0m" 401 -
+INFO:logger:PUT /login
+INFO:logger:User 1000 authenticated successfully
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:20:06] "PUT /user HTTP/1.1" 200 -
+INFO:logger:POST /appointment
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:20:59] "POST /appointment HTTP/1.1" 200 -
+INFO:logger:GET /appointments/13
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:21:32] "GET /appointments/13 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:22:58] "[31m[1mPOST /bills HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:23:09] "POST /bills HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:23:49] "[31m[1mPOST /surgery HTTP/1.1[0m" 401 -
+INFO:logger:POST /surgery
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:23:57] "[31m[1mPOST /surgery HTTP/1.1[0m" 400 -
+INFO:logger:PUT /login
+WARNING:logger:Failed login attempt for NIF 10
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:24:41] "[31m[1mPUT /user HTTP/1.1[0m" 401 -
+INFO:logger:PUT /login
+WARNING:logger:Failed login attempt for NIF 10
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:24:48] "[31m[1mPUT /user HTTP/1.1[0m" 401 -
+INFO:logger:PUT /login
+WARNING:logger:Failed login attempt for NIF 9
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:24:53] "[31m[1mPUT /user HTTP/1.1[0m" 401 -
+INFO:logger:POST /assistant
+DEBUG:logger:POST /assistant - payload: {'nif': '2000', 'nome': 'Assistente 11', 'telemovel': '987654', 'email': 'assistente11@gmail.com', 'data_nasc': '1999-08-19', 'genero': 'Masculino', 'password': 'assistente2000', 'detalhes_contrato': '2040'}
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:25:07] "POST /assistant HTTP/1.1" 200 -
+INFO:logger:PUT /login
+INFO:logger:User 2000 authenticated successfully
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:25:26] "PUT /user HTTP/1.1" 200 -
+INFO:logger:POST /surgery
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:25:51] "[31m[1mPOST /surgery HTTP/1.1[0m" 400 -
+INFO:logger:POST /surgery
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:25:55] "POST /surgery HTTP/1.1" 200 -
+INFO:logger:PUT /login
+INFO:logger:User 100 authenticated successfully
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:26:30] "PUT /user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:26:54] "[31m[1mPOST /prescription HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:27:02] "POST /prescription HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:27:16] "POST /prescription HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:27:40] "POST /prescription HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:27:55] "[31m[1mGET /prescriptions/13 HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:28:05] "[33mGET /prescriptions/13 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:28:39] "[33mGET /prescriptions/13 HTTP/1.1[0m" 404 -
+INFO:logger:PUT /login
+INFO:logger:User 1000 authenticated successfully
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:29:09] "PUT /user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:29:27] "[33mGET /prescriptions/13 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:30:10] "GET /prescriptions/1 HTTP/1.1" 200 -
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 179-988-510
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:32:05] "[33mGET /prescriptions/1 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:32:10] "GET /prescriptions/13 HTTP/1.1" 200 -
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 179-988-510
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:33:09] "GET /prescriptions/13 HTTP/1.1" 200 -
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 179-988-510
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:33:48] "[33mGET /prescriptions/13 HTTP/1.1[0m" 404 -
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 179-988-510
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:34:07] "[33mGET /prescriptions/13 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:34:32] "[33mGET /prescriptions/13 HTTP/1.1[0m" 404 -
+INFO:logger:PUT /login
+INFO:logger:User 2000 authenticated successfully
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:35:24] "PUT /user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:35:55] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:36:05] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:logger:API v1.0 online: http://127.0.0.1:8080
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 179-988-510
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:36:20] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:36:30] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:36:55] "GET /report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:37:48] "[31m[1mGET /daily/01-06-2024 HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:38:04] "GET /daily/01-06-2024 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:38:41] "GET /daily/04-06-2024 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:38:53] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:38:54] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:42:51] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jun/2024 15:42:52] "[35m[1mGET /top3 HTTP/1.1[0m" 500 -

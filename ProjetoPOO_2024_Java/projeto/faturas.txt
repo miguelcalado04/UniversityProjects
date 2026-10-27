@@ -1,0 +1,2 @@
+1,123456789,2023-12-01,1,A,Maçã Bio,Fruta Biológica,100,0.50,true,Cert1|Cert2,Frutas-2,F,Paracetamol,Medicamento para febre,50,1.00,true,Joao Silva;
+2,987654321,2023-12-02,3,F,Ibuprofeno,Analgésico,30,2.50,false,Animais;

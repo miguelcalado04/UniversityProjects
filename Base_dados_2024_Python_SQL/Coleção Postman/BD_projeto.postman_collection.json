@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "f784bc78-e8ca-4aea-b6a8-617eff54e77f",
+		"name": "BD_projeto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34166589",
+		"_collection_link": "https://martian-zodiac-884513.postman.co/workspace/My-Workspace~69a70e68-c88d-419e-84b8-40b7302ec262/collection/34166589-f784bc78-e8ca-4aea-b6a8-617eff54e77f?action=share&source=collection_link&creator=34166589"
+	},
+	"item": [
+		{
+			"name": "patient",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxNjYwODY4MCwianRpIjoiMTYyYzI5ZmEtMjU5MC00MWYxLTk1ZmYtYjA4N2M5M2JhNTNlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEyMzQ1NiIsIm5iZiI6MTcxNjYwODY4MCwiY3NyZiI6ImRkNjY5YzZmLWMwNTQtNGY4MC1hNzI0LWY3OTRhOTdhZTAzYiIsImV4cCI6MTcxNjYxMjI4MH0.kgSHciyIa5GbFxykSTGV61dg2BgoNYnrSnrrglv1NAo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nif\": \"212098376\",\r\n    \"nome\": \"Paciente11\",\r\n    \"telemovel\": \"9333\",\r\n    \"email\": \"paciente11@gmail.com\",\r\n    \"data_nasc\": \"1999-08-19\",\r\n    \"genero\": \"Masculino\",\r\n    \"password\": \"paciente11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assistant",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Fixed the syntax error in response schema test\r",
+							"pm.test(\"Response schema is valid\", function () {\r",
+							"  var schema = {\r",
+							"    type: \"object\",\r",
+							"    properties: {\r",
+							"      title: { type: \"string\" },\r",
+							"      message: { type: \"string\" }\r",
+							"    },\r",
+							"    required: [\"title\", \"message\"]\r",
+							"  };\r",
+							"\r",
+							"  var response = pm.response.json();\r",
+							"  pm.expect(response).to.have.property('title');\r",
+							"  pm.expect(response).to.have.property('message');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxNjY2OTg2NywianRpIjoiYzc1MDY5ODItMTA3MS00Y2MxLWJkN2QtN2JiNTBjYThlMmVlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjExMTQ0NCIsIm5iZiI6MTcxNjY2OTg2NywiY3NyZiI6IjkxNTAzZjMxLWFlNDMtNDMxYi04OTY2LTZjNzIwOTMwNGFiYiIsImV4cCI6MTcxNjY3MzQ2N30.nrlnOKi1khjkfN8jRLtJ1VJXO4zPMHzrQ3EZeiIqDu0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nif\": \"347853458\",\n    \"nome\": \"Assistente 11\",\n    \"telemovel\": \"987654\",\n    \"email\": \"assistente11@gmail.com\",\n    \"data_nasc\": \"1999-08-19\",\n    \"genero\": \"Masculino\",\n    \"password\": \"assistente11\",\n    \"detalhes_contrato\": \"2040\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/assistant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assistant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nurse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nif\": \"543638346\",\r\n    \"nome\": \"Enfermeiro 11\",\r\n    \"telemovel\": \"9955\",\r\n    \"email\": \"enfermeiro11@example.com\",\r\n    \"data_nasc\": \"1999-08-19\",\r\n    \"genero\": \"Masculino\",\r\n    \"password\": \"enfermeiro11\",\r\n    \"detalhes_contrato\": \"2040\",\r\n    \"hierarquia_interna\":\"primary\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/nurse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nurse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nif\": \"246798022\",\r\n    \"nome\": \"Medico 11\",\r\n    \"telemovel\": \"9999\",\r\n    \"email\": \"medico11@example.com\",\r\n    \"data_nasc\": \"1999-08-19\",\r\n    \"genero\": \"Masculino\",\r\n    \"password\": \"medico11\",\r\n    \"detalhes_contrato\": \"2040\",\r\n    \"licenca_medica\": \"2060\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"nif\": \"212098376\",\r\n    \"password\": \"paciente11\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctor_id\": \"id\",\r\n    \"date\": \"2024-06-01 14:30:00\",\r\n    \"nurse_ids\": [id]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/appointment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"appointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appointments/{id_paciente}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/appointments/{id_paciente}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"appointments",
+						"{id_paciente}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "surgery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": id, \r\n    \"doctor\": id, \r\n    \"nurses\": [[id, \"hierarquia_interna\"]], \r\n    \"date\": \"2024-06-01 14:20\", \r\n    \"room_number\": 99,\r\n    \"surgery_type\": \"Appendectomy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/surgery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"surgery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prescription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"type\",\r\n  \"event_id\": id, \r\n  \"date\": \"2024-12-31\",\r\n  \"medicines\": [\r\n    {\r\n      \"medicine\": \"Paracetamol\",\r\n      \"posology_dose\": \"500mg\"\r\n    },\r\n    {\r\n      \"medicine\": \"Ibuprofen\",\r\n      \"posology_dose\": \"200mg\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/prescription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prescription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prescriptions/{person_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/prescription/{person_id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prescription",
+						"{person_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bills",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conta_id\": conta_id,\r\n    \"valor\": 50.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TOP3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "daily/{date}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/daily/<date>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"daily",
+						"<date>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
